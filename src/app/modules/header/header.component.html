@@ -7,13 +7,13 @@
   <div class="container__right-content">
     <div class="language-selector">
       <div class="theme-switcher">
-        <i (click)="switchTheme('dark')"
+        <i (click)="themeService.switchTheme('dark')"
            class="wk-icon wk-icon-moon"
-           [class.hidden]="currentTheme === 'dark'"
+           [class.hidden]="themeService.currentTheme === 'dark'"
            [title]="'THEME.SWITCH' | translate"></i>
-        <i (click)="switchTheme('light')"
+        <i (click)="themeService.switchTheme('light')"
            class="wk-icon wk-icon-sun"
-           [class.hidden]="currentTheme === 'light'"
+           [class.hidden]="themeService.currentTheme === 'light'"
            [title]="'THEME.SWITCH' | translate"></i>
       </div>
       <span class="language-item"
