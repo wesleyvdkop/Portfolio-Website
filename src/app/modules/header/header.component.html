@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container__left-content">
+    <div class="content__overlay"></div>
+
+    <wk-animated-field></wk-animated-field>
+  </div>
+  <div class="container__right-content">
+    <div class="language-selector">
+      <span class="language-item"
+            (click)="switchLanguage('nl_NL')"
+            [title]="(currentLanguage !== 'nl_NL' ? 'TRANSLATION.SWITCH' : '') | translate"
+            [ngClass]="{'language-item--active': currentLanguage === 'nl_NL'}">NL</span>
+      <span class="language-item"
+            (click)="switchLanguage('en_US')"
+            [title]="(currentLanguage !== 'en_US' ? 'TRANSLATION.SWITCH' : '') | translate"
+            [ngClass]="{'language-item--active': currentLanguage === 'en_US'}">EN</span>
+    </div>
+    <div class="content">
+      <div class="content__header">
+
+        <h5 class="content__header-label">
+          {{ 'HEADER.LABEL' | translate }}
+        </h5>
+
+        <h1 class="content__header-title">
+          {{ 'HEADER.NAME' | translate }}
+        </h1>
+
+        <p class="content__header-description"
+           [innerHtml]="'HEADER.DESCRIPTION' | translate">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

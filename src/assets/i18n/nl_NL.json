@@ -1,0 +1,10 @@
+{
+  "HEADER": {
+    "NAME": "Wesley van der Kop",
+    "LABEL": "Hallo, mijn naam is",
+    "DESCRIPTION": "Ik ben een enthousiaste web developer & designer momenteel maak ik mooie producten bij Everbridge, terwijl ik daarnaast ook nog mijn eigen bedrijf heb. Als je wil weten waar ik aan toe ben bekijk dan mijn <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> of als je intresse hebt in meer werk van mij neem dan contact op."
+  },
+  "TRANSLATION": {
+    "SWITCH": "Verander naar engels"
+  }
+}

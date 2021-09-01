@@ -1,0 +1,255 @@
+@import "./../../../styles/component";
+
+.container {
+  display: flex;
+  height: 100%;
+  position: relative;
+
+  &__left-content {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    border: none;
+    background: #118aa1;
+
+    .content__overlay {
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+
+      background: #000;
+      opacity: .3;
+    }
+  }
+
+  &__right-content {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .language-selector {
+      display: flex;
+      justify-content: flex-end;
+      margin: 32px 0 0;
+
+      animation: fadeInDown 1s;
+
+      .language-item {
+        color: var(--text-white);
+        text-transform: uppercase;
+
+        font-size: $header-label--small;
+        line-height: 1.4em;
+        letter-spacing: 0.21em;
+        font-weight: 400;
+        margin-right: 12px;
+
+        cursor: pointer;
+
+        &--active {
+          color: var(--yellow);
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: auto;
+      text-align: center;
+      transform: translateY(0);
+      bottom: 18%;
+      left: 5%;
+
+      &__header-label {
+        display: block;
+        color: var(--yellow);
+        text-transform: uppercase;
+        font-size: $header-label--small;
+        line-height: 1.4em;
+        letter-spacing: 0.21em;
+        font-weight: 400;
+
+        animation: fadeInDown 1s;
+      }
+
+      &__header-title {
+        display: block;
+        color: var(--text-white);
+        font-size: $header--small;
+        font-weight: 500;
+        position: relative;
+
+        animation: fadeInDown 1.5s;
+
+        &:after {
+          display: block;
+          content: " ";
+          width: 15%;
+          height: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: var(--yellow);
+        }
+      }
+
+      &__header-description {
+        display: block;
+        max-width: 480px;
+        margin-top: 20px;
+        font-family: 'karma', sans-serif;
+        font-size: $general-text--small;
+        line-height: 1.4em;
+        font-weight: 400;
+        color: var(--text-white);
+
+        animation: fadeInDown 2s;
+      }
+    }
+
+    .next-page__ribbon {
+      display: block;
+      position: absolute;
+      bottom: -40px;
+      right: 200px;
+      width: 50px;
+      height: 100px;
+      background-color: var(--yellow);
+      text-align: center;
+      transform-style: preserve-3d;
+      cursor: pointer;
+
+      animation: bounceIn .75s;
+
+      img {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+// Media queries
+@media #{$sm-up} {
+  .container {
+
+    &__left-content {
+      box-sizing: border-box;
+      border: 20px solid var(--background-color);
+    }
+
+    &__right-content {
+      position: relative;
+      margin-left: 140px;
+
+      transform: unset;
+      left: unset;
+
+      .language-selector {
+        margin: 50px 0 0;
+      }
+
+      .content {
+        width: 80%;
+        text-align: left;
+        left: 0;
+
+        &__header-label {
+          font-size: $header-label;
+        }
+
+        &__header-title {
+          font-size: $header--medium;
+
+          &:after {
+            width: 10%;
+            bottom: 5%;
+            left: 0;
+            transform: none;
+          }
+        }
+
+        &__header-description {
+          font-size: $general-text;
+        }
+      }
+    }
+  }
+}
+
+@media #{$md-up} {
+  .container {
+    display: flex;
+    height: 100%;
+    position: relative;
+
+    &__left-content {
+      width: 40%;
+      position: relative;
+      border: 20px solid var(--background-color);
+
+      .scene {
+        height: 100%;
+      }
+
+      .content__overlay {
+        display: none;
+      }
+    }
+
+    &__right-content {
+      width: 60%;
+
+      .language-selector {
+        margin: 20px 20px 0 0;
+
+        .language-item {
+          color: var(--text-gray);
+
+          &--active {
+            color: var(--yellow);
+          }
+        }
+      }
+
+      .content {
+        position: absolute;
+        top: auto;
+        width: 80%;
+        transform: translateY(0);
+        bottom: 18%;
+        left: 5%;
+
+        &__header-title {
+          font-size: $header--medium;
+          color: var(--text-color);
+        }
+
+        &__header-description {
+          color: var(--text-gray);
+        }
+      }
+    }
+  }
+}
+
+@media #{$lg-up} {
+  .container {
+    &__right-content {
+      .content {
+        &__header-title {
+          font-size: $header--large;
+        }
+      }
+    }
+  }
+}

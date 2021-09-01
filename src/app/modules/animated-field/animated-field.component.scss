@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  height: 100%;
+}
+
+.scene {
+  height: 100%;
+}
+
+// COLORS FOR ANIMATED FIELD
+.scene-path {
+  &__one {
+    fill: #267FA1;
+  }
+
+  &__two {
+    fill: #2C7DB5;
+  }
+
+  &__three {
+    fill: #318BC9;
+  }
+
+  &__four {
+    fill: #3598DD;
+  }
+
+  &__five {
+    fill: #47A1E0;
+  }
+
+  &__six {
+    fill: #59AAE3;
+  }
+
+  &__seven {
+    fill: #6CB4E6;
+  }
+}
