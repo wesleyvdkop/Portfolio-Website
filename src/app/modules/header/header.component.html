@@ -17,13 +17,13 @@
            [title]="'THEME.SWITCH' | translate"></i>
       </div>
       <span class="language-item"
-            (click)="switchLanguage('nl_NL')"
-            [title]="(currentLanguage !== 'nl_NL' ? 'TRANSLATION.SWITCH' : '') | translate"
-            [ngClass]="{'language-item--active': currentLanguage === 'nl_NL'}">NL</span>
+            (click)="languageService.switchLanguage('nl_NL')"
+            [title]="(languageService.currentLanguage !== 'nl_NL' ? 'TRANSLATION.SWITCH' : '') | translate"
+            [ngClass]="{'language-item--active': languageService.currentLanguage === 'nl_NL'}">NL</span>
       <span class="language-item"
-            (click)="switchLanguage('en_US')"
-            [title]="(currentLanguage !== 'en_US' ? 'TRANSLATION.SWITCH' : '') | translate"
-            [ngClass]="{'language-item--active': currentLanguage === 'en_US'}">EN</span>
+            (click)="languageService.switchLanguage('en_US')"
+            [title]="(languageService.currentLanguage !== 'en_US' ? 'TRANSLATION.SWITCH' : '') | translate"
+            [ngClass]="{'language-item--active': languageService.currentLanguage === 'en_US'}">EN</span>
     </div>
     <div class="content">
       <div class="content__header">

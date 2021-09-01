@@ -1,5 +1,6 @@
 import { Component, Renderer2 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../../shared/language.service';
 import { Themes } from '../../shared/theme.service';
 
 @Component({
@@ -8,23 +9,17 @@ import { Themes } from '../../shared/theme.service';
   styleUrls: [ './header.component.scss' ]
 })
 export class HeaderComponent {
-  public currentLanguage: string;
   public currentTheme: Themes = 'light';
 
   constructor(
+    public languageService: LanguageService,
     private translateService: TranslateService,
     private renderer: Renderer2
   ) {
-    this.currentLanguage = this.translateService.getDefaultLang();
-  }
-
-  public switchLanguage(language: string) {
-    this.translateService.use(language);
-    this.currentLanguage = language;
   }
 
   public switchTheme(theme: Themes) {
-    if ( theme === 'dark') {
+    if ( theme === 'dark' ) {
       this.renderer.addClass(document.body, 'theme-dark');
       this.currentTheme = 'dark';
     } else {
