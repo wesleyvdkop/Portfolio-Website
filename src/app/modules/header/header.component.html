@@ -6,6 +6,16 @@
   </div>
   <div class="container__right-content">
     <div class="language-selector">
+      <div class="theme-switcher">
+        <i (click)="switchTheme('dark')"
+           class="wk-icon wk-icon-moon"
+           [class.hidden]="currentTheme === 'dark'"
+           [title]="'THEME.SWITCH' | translate"></i>
+        <i (click)="switchTheme('light')"
+           class="wk-icon wk-icon-sun"
+           [class.hidden]="currentTheme === 'light'"
+           [title]="'THEME.SWITCH' | translate"></i>
+      </div>
       <span class="language-item"
             (click)="switchLanguage('nl_NL')"
             [title]="(currentLanguage !== 'nl_NL' ? 'TRANSLATION.SWITCH' : '') | translate"

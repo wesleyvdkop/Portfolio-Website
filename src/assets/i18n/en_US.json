@@ -6,5 +6,8 @@
   },
   "TRANSLATION": {
     "SWITCH": "Switch to dutch"
+  },
+  "THEME": {
+    "SWITCH": "Switch theme"
   }
 }
