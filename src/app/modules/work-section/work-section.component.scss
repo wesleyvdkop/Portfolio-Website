@@ -15,20 +15,8 @@
       color: var(--text-white);
       font-size: $header--small;
       font-weight: 500;
-      position: relative;
       margin-bottom: 70px;
-
-      &:after {
-        display: block;
-        content: " ";
-        width: 15%;
-        height: 3px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--yellow);
-      }
+      @include underline(5%);
     }
 
     .work__subtitle {
@@ -120,13 +108,6 @@
 
       .work__title {
         font-size: $header--medium;
-
-        &:after {
-          width: 5%;
-          bottom: 5%;
-          left: 0;
-          transform: none;
-        }
       }
 
       .work__subtitle {
@@ -134,7 +115,6 @@
       }
 
       .career__container {
-        //display: flex;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);

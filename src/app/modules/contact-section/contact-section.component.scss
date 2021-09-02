@@ -34,20 +34,8 @@
       color: var(--text-white);
       font-size: $header--small;
       font-weight: 500;
-      position: relative;
       margin-bottom: 40px;
-
-      &:after {
-        display: block;
-        content: " ";
-        width: 15%;
-        height: 3px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--yellow);
-      }
+      @include underline(5%);
     }
 
     .contact__description {
@@ -203,8 +191,6 @@
       text-align: left;
 
       .content {
-        //top: 50%;
-        //transform: translateY(-50%);
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -222,21 +208,9 @@
 
       .contact__title {
         font-size: $header--medium;
-
-        &:after {
-          width: 5%;
-          bottom: 5%;
-          left: 0;
-          transform: unset;
-          background-color: var(--yellow);
-        }
       }
 
       .social {
-        //position: absolute;
-        //top: auto;
-        //bottom: 69px;
-
         ul {
           display: flex;
           font-size: 0.9rem;

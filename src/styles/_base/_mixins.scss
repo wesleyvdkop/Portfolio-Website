@@ -1,0 +1,22 @@
+@mixin underline($width: 10%) {
+  position: relative;
+
+  &:after {
+    display: block;
+    content: " ";
+    width: 15%;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--yellow);
+
+    @media #{$sm-up} {
+      width: $width;
+      bottom: 5%;
+      left: 0;
+      transform: none;
+    }
+  }
+}

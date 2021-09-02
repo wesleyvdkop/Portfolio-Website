@@ -112,21 +112,10 @@
         color: var(--text-white);
         font-size: $header--small;
         font-weight: 500;
-        position: relative;
 
         animation: fadeInDown 1.5s;
 
-        &:after {
-          display: block;
-          content: " ";
-          width: 15%;
-          height: 3px;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: var(--yellow);
-        }
+        @include underline();
       }
 
       &__header-description {
@@ -196,13 +185,6 @@
 
         &__header-title {
           font-size: $header--medium;
-
-          &:after {
-            width: 10%;
-            bottom: 5%;
-            left: 0;
-            transform: none;
-          }
         }
 
         &__header-description {
@@ -223,7 +205,6 @@
       width: 40%;
       position: relative;
       border: 20px solid var(--background-color);
-      transition: width .5s ease-out;
       animation-delay: 1.5s;
 
       .scene {

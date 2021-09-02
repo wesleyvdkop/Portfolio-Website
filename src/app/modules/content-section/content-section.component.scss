@@ -26,9 +26,9 @@
       color: var(--text-color);
       font-size: $header--small;
       font-weight: 500;
-      position: relative;
 
       margin-bottom: 60px;
+      @include underline(5%);
 
       &--extra {
         display: block;
@@ -53,18 +53,6 @@
             animation-delay: 6s;
           }
         }
-      }
-
-      &:after {
-        display: block;
-        content: " ";
-        width: 15%;
-        height: 3px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--yellow);
       }
     }
 
@@ -104,13 +92,6 @@
       .header-title {
         font-size: $header--medium;
         margin-bottom: 30px;
-
-        &:after {
-          width: 5%;
-          bottom: 5%;
-          left: 0;
-          transform: none;
-        }
 
         &--extra {
           display: inline-block;
