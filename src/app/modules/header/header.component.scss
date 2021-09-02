@@ -223,6 +223,8 @@
       width: 40%;
       position: relative;
       border: 20px solid var(--background-color);
+      transition: width .5s ease-out;
+      animation-delay: 1.5s;
 
       .scene {
         height: 100%;
@@ -238,6 +240,7 @@
 
       .language-selector {
         margin: 20px 20px 0 0;
+        animation-delay: 1.5s;
 
         .theme-switcher {
           border-right: 1px solid var(--text-gray);
@@ -264,13 +267,19 @@
         bottom: 18%;
         left: 5%;
 
+        &__header-label {
+          animation-delay: 1.5s;
+        }
+
         &__header-title {
           font-size: $header--medium;
           color: var(--text-color);
+          animation-delay: 1.5s;
         }
 
         &__header-description {
           color: var(--text-gray);
+          animation-delay: 1.5s;
         }
       }
     }

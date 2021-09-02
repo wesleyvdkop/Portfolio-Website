@@ -133,15 +133,8 @@
 }
 
 @media #{$lg-up} {
-
-  .section-about {
-
-    .content {
-
-      .header-title {
-        font-size: $header--large;
-      }
-    }
+  .section-about .content .header-title {
+    font-size: $header--large;
   }
 }
 

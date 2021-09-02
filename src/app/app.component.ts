@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { LanguageService } from './shared/language.service';
 
@@ -11,8 +11,13 @@ export class AppComponent {
 
   constructor(
     private router: Router,
-    private languageService: LanguageService
+    private languageService: LanguageService,
+    private renderer: Renderer2
   ) {
+    this.renderer.addClass(document.body,'intro');
+    setTimeout(() => {
+      this.renderer.removeClass(document.body,'intro');
+    }, 2000);
     this.router.events.subscribe((event) => {
       event instanceof NavigationEnd ? this.routeCheck(event) : null;
     });
