@@ -1,0 +1,147 @@
+@import "./../../../styles/component";
+
+.section-about {
+  background: var(--background-color);
+  padding: 100px 20px;
+  height: auto;
+
+  text-align: center;
+
+  //box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+
+  .content {
+
+    .header-label {
+      display: block;
+      color: var(--yellow);
+      text-transform: uppercase;
+      font-size: $header-label--small;
+      line-height: 1.4em;
+      letter-spacing: 0.21em;
+      font-weight: 400;
+    }
+
+    .header-title {
+      display: block;
+      color: var(--text-color);
+      font-size: $header--small;
+      font-weight: 500;
+      position: relative;
+
+      margin-bottom: 60px;
+
+      &--extra {
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        li {
+          position: absolute;
+          width: 100%;
+          color: var(--yellow);
+          opacity: 0;
+          overflow: hidden;
+
+          animation: wordList 9s linear infinite 0s;
+
+          &:nth-child(2) {
+            animation-delay: 3s;
+          }
+
+          &:nth-child(3) {
+            animation-delay: 6s;
+          }
+        }
+      }
+
+      &:after {
+        display: block;
+        content: " ";
+        width: 15%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--yellow);
+      }
+    }
+
+    .info-list {
+
+      li {
+        margin-bottom: 35px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .info {
+      font-family: 'karma', sans-serif;
+      font-size: $general-text--small;
+      line-height: 1.4em;
+      font-weight: 400;
+      color: var(--text-gray);
+    }
+  }
+}
+
+@media #{$sm-up} {
+
+  .section-about {
+    text-align: left;
+
+    .content {
+      margin-left: 120px;
+
+      .header-label {
+        font-size: $header-label;
+      }
+
+      .header-title {
+        font-size: $header--medium;
+        margin-bottom: 30px;
+
+        &:after {
+          width: 5%;
+          bottom: 5%;
+          left: 0;
+          transform: none;
+        }
+
+        &--extra {
+          display: inline-block;
+          position: absolute;
+          width: unset;
+          margin-left: 12px;
+
+          li {
+            width: unset;
+          }
+        }
+      }
+
+      .info {
+        font-size: $general-text;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media #{$lg-up} {
+
+  .section-about {
+
+    .content {
+
+      .header-title {
+        font-size: $header--large;
+      }
+    }
+  }
+}
+

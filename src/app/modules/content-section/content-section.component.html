@@ -1,0 +1,26 @@
+<section class="section section-about">
+
+  <div class="content">
+    <span class="header-label">
+      {{ label | translate }}
+    </span>
+
+    <h2 class="header-title">
+      {{ title | translate }}
+      <ul class="header-title--extra"
+          *ngIf="titleExtras.length > 0">
+        <li *ngFor="let titleExtra of titleExtras">
+          {{ titleExtra | translate }}
+        </li>
+      </ul>
+    </h2>
+
+    <ul class="info-list">
+      <li *ngFor="let text of texts">
+        <p class="info"
+           [innerHTML]=" text | translate ">
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>

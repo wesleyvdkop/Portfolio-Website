@@ -1,0 +1,59 @@
+<div class="section section-work">
+  <div class="container">
+    <h2 class="work__title">
+      {{ 'WORK.TITLE' | translate }}
+    </h2>
+
+    <h3 class="work__subtitle">
+      {{ 'WORK.CAREER' | translate }}
+    </h3>
+
+
+    <ul class="career__container">
+      <li class="career" *ngFor="let job of jobs">
+        <h4>
+          <a
+            class="link link--line"
+            href="{{ job.link }}"
+            target="_blank">
+            {{ job.name }}
+          </a>
+        </h4>
+
+        <span>
+          {{ 'WORK.' + job.translationKeyTitle | translate }}
+        </span>
+
+        <span>
+          {{ 'WORK.' + job.translationKeyTime | translate }}
+        </span>
+      </li>
+    </ul>
+
+    <!--<h3 class="work__subtitle"-->
+        <!--*ngIf="projects">-->
+      <!--{{ 'WORK.PROJECTS' | translate }}-->
+    <!--</h3>-->
+
+    <!--<div class="career__container"-->
+         <!--*ngIf="projects">-->
+      <!--<div class="projects">-->
+        <!--<ul>-->
+          <!--<li class="project"-->
+              <!--*ngFor="let project of projects">-->
+            <!--<h4>-->
+              <!--<a class="link link&#45;&#45;line"-->
+                 <!--href="{{ project.link }}"-->
+                 <!--target="_blank">-->
+                <!--{{ project.name }}-->
+              <!--</a>-->
+            <!--</h4>-->
+
+            <!--<span>{{ 'WORK.PROJECTS' | translate }}</span>-->
+          <!--</li>-->
+        <!--</ul>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  </div>
+</div>

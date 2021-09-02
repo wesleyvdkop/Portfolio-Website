@@ -2,7 +2,51 @@
   "HEADER": {
     "NAME": "Wesley van der Kop",
     "LABEL": "Hallo, mijn naam is",
-    "DESCRIPTION": "Ik ben een enthousiaste web developer & designer momenteel maak ik mooie producten bij Everbridge, terwijl ik daarnaast ook nog mijn eigen bedrijf heb. Als je wil weten waar ik aan toe ben bekijk dan mijn <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> of als je intresse hebt in meer werk van mij neem dan contact op."
+    "DESCRIPTION": "Ik ben een enthousiaste software engineer & designer momenteel maak ik mooie producten bij Everbridge, terwijl ik daarnaast ook nog mijn eigen bedrijf heb. Als je wil weten waar ik aan toe ben bekijk dan mijn <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> of als je intresse hebt in meer werk van mij neem dan contact op."
+  },
+  "ABOUT": {
+    "TITLE": "Developen tijdens het",
+    "LABEL": "Over mij",
+    "TRAVELING": "Reizen",
+    "EATING": "Eten",
+    "SLEEPING": "Slapen",
+    "INFO--FIRST": "Ik geniet van wat ik doe en je kunt mij ook vaak nog laat vinden met het zoeken naar nieuwe dingen en uitdagingen. Wanneer ik niet voor mijn laptop zit dan ben ik graag aan het sporten zoals fitness of andere actieve bezigheden, of andere leuke activiteiten doen met mijn vrienden.",
+    "INFO--SECOND": "Momenteel werk ik bij Everbridge als senior software engineer. Naast mijn engineering taak creëer ik ook nieuwe designs voor producten binnen Everbridge. Door mijn interesse om nieuwe dingen te proberen heb ik ook een eigen onderneming opgestart Digital Stamp. Als je geintresseerd bent in waar ik mee bezig ben kan je ook naar <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> kijken of naar <a class='link link--black' href='https://github.com/wesleyvdkop' target='_blank'>Github</a> of <a class='link link--black' href='https://dribbble.com/wesleyvdkop' target='_blank'>Dribbble</a>. Je kan ook altijd vragen aan mij stellen via <a class='link link--black' href='mailto:mail@wesleyvanderkop.nl'>mail@wesleyvanderkop.nl</a>.",
+    "INFO--THIRD": "Het is mijn droom om ver te kunnen gaan reizen en meer te zien van de wereld en ook op andere plekken in de wereld mijn werk te kunnen verrichten. Ik sta altijd open voor nieuwe uitdaginen ook sta ik altijd open voor een praatje als het maar over intressanten onderwerpen gaat."
+  },
+  "SKILL_SET": {
+    "TITLE": "Front-end Developen & Designen",
+    "LABEL": "Mijn skillset",
+    "INFO--FIRST": "Ik ben gespecialiseerd in het bouwen van webapplicaties, SaaS producten creëren, het werken in teams met scrum en SAFe agile methodes en het ontwerpen van digitale producten. Ik geniet van het creëren van nieuwe digitale producten.",
+    "INFO--SECOND": "Maar aan welke skillset kan je dan een beetje denken? Natuurlijk de algemene kennis met html en css (scss), javascript en daarin verschillende frameworks / libraries waar mijn specialiteit vooral ligt bij Angular. Kennis van de back-end is er natuurlijk ook maar mijn specialiteit ligt in de front-end, maar ik sta altijd open voor iets nieuws. Connecties maken naar de back-end via API's hoort ook natuurlijk bij de job! Bij het designen liggen mijn skills bij de tools Sketch, Photoshop en Illustrator.",
+    "INFO--THIRD": "Tijdens mijn werk bij Everbridge, Respond & MediaMonks heb ik veel geleerd over werken in verschillende teams en het managen ervan. Ook vind ik het altijd leuk om te horen hoe klanten met de producten omgaan en te zien of er ergens problemen mee zijn zodat deze meteen opgelost kunnen worden."
+  },
+  "WORK": {
+    "TITLE": "Werk",
+    "CAREER": "Carrière",
+    "PROJECTS": "Projecten",
+    "RESPOND": {
+      "TITLE": "Front-end Developer & Designer",
+      "TIME": "Begin 2017 - Eind 2018"
+    },
+    "EVERBRIDGE": {
+      "TITLE": "Senior Software Engineer",
+      "TIME": "Eind 2018 - Heden"
+    },
+    "DIGITAL_STAMP": {
+      "TITLE": "Eigenaar",
+      "TIME": "Midden 2020 - Heden"
+    },
+    "MEDIAMONKS": {
+      "TITLE": "Stagair Front-end Developer",
+      "TIME": "Midden 2016 - Eind 2016"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Laten we in contact komen!",
+    "TITLE_LABEL": "Wat nu",
+    "DESCRIPTION": "Als je over de toekomst wil praten laat dan maar een bericht achter naar <a class='link link--white' href='mailto:mail@wesleyvanderkop.nl'>mail@wesleyvanderkop.nl</a>. Ik ben altijd opzoek naar een uitdaging.",
+    "BUTTON": "Schrijf een email"
   },
   "TRANSLATION": {
     "SWITCH": "Verander naar engels"

@@ -1,0 +1,38 @@
+<div class="section section-contact">
+  <div class="container">
+
+    <div class="content">
+      <span class="contact__title-label">
+        {{ 'CONTACT.TITLE_LABEL' | translate }}
+      </span>
+
+      <h2 class="contact__title">
+        {{ 'CONTACT.TITLE' | translate }}
+      </h2>
+
+      <h5 class="contact__description"
+          [innerHTML]=" 'CONTACT.DESCRIPTION' | translate ">
+      </h5>
+
+      <a class="btn" href="mailto:mail@wesleyvanderkop.nl?subject=Laten we in contact komen!">
+        <span class="btn-borders btn-borders__top"></span>
+        <span class="btn-borders btn-borders__right"></span>
+        {{ 'CONTACT.BUTTON' | translate }}
+        <span class="btn-borders btn-borders__bottom"></span>
+        <span class="btn-borders btn-borders__left"></span>
+      </a>
+    </div>
+
+    <footer class="social">
+      <ul>
+        <li *ngFor="let social of socialmedia">
+          <a class="link"
+             href="{{ social.link }}"
+             target="_blank">
+            {{ social.name }}
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</div>
