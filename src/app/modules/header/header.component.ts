@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.startDelay = window.innerWidth <= this.mediumScreenSize ? 0 : 1500;
+    this.startDelay = window.innerWidth <= this.mediumScreenSize ? 0 : 1000;
 
     const controls = this.headingControls.nativeElement.children;
     const content = this.headingContent.nativeElement.children;
