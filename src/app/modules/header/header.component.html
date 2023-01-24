@@ -5,7 +5,7 @@
     <wk-animated-field></wk-animated-field>
   </div>
   <div class="container__right-content">
-    <div class="language-selector">
+    <div #headingControls class="language-selector">
       <div class="theme-switcher">
         <i (click)="themeService.switchTheme('dark')"
            class="wk-icon wk-icon-moon"
@@ -26,7 +26,7 @@
             [ngClass]="{'language-item--active': languageService.currentLanguage === 'en_US'}">EN</span>
     </div>
     <div class="content">
-      <div class="content__header">
+      <div #headingContent class="content__header">
 
         <h5 class="content__header-label">
           {{ 'HEADER.LABEL' | translate }}

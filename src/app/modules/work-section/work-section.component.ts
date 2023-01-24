@@ -13,16 +13,16 @@ export class WorkSectionComponent {
    */
   public jobs = [
     {
-      name: 'Digital Stamp',
-      link: 'https://digitalstamp.nl',
-      translationKeyTitle: 'DIGITAL_STAMP.TITLE',
-      translationKeyTime: 'DIGITAL_STAMP.TIME'
-    },
-    {
       name: 'Everbridge',
       link: 'https://everbridge.com',
       translationKeyTitle: 'EVERBRIDGE.TITLE',
       translationKeyTime: 'EVERBRIDGE.TIME'
+    },
+    {
+      name: 'Digital Stamp',
+      link: 'https://wesleyvanderkop.nl',
+      translationKeyTitle: 'DIGITAL_STAMP.TITLE',
+      translationKeyTime: 'DIGITAL_STAMP.TIME'
     },
     {
       name: 'Respond',

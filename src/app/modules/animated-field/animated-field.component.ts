@@ -4,8 +4,8 @@ import {
   ViewChild,
   ElementRef
 } from '@angular/core';
+import { forEach } from 'lodash';
 
-// @ts-ignore
 import anime from 'animejs/lib/anime.es.js';
 
 @Component({
@@ -22,7 +22,7 @@ export class AnimatedFieldComponent implements AfterViewInit {
   public ngAfterViewInit() {
     const paths = this.scene.nativeElement.children;
 
-    Array.prototype.forEach.call(paths, child => {
+    forEach(paths, child => {
       setTimeout(() => {
         anime({
           targets: child,

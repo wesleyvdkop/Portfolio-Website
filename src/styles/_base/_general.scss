@@ -16,6 +16,7 @@ body {
 }
 
 body {
+  @include scrollbars(transparent, transparent);
   transition: background-color .15s ease-out;
 
   &.theme-dark .container__left-content {

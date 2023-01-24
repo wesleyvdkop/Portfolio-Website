@@ -38,8 +38,6 @@
       justify-content: flex-end;
       margin: 32px 0 0;
 
-      animation: fadeInDown 1s;
-
       .theme-switcher {
         position: relative;
         display: flex;
@@ -103,8 +101,6 @@
         line-height: 1.4em;
         letter-spacing: 0.21em;
         font-weight: 400;
-
-        animation: fadeInDown 1s;
       }
 
       &__header-title {
@@ -112,8 +108,6 @@
         color: var(--text-white);
         font-size: $header--small;
         font-weight: 500;
-
-        animation: fadeInDown 1.5s;
 
         @include underline();
       }
@@ -127,8 +121,6 @@
         line-height: 1.4em;
         font-weight: 400;
         color: var(--text-white);
-
-        animation: fadeInDown 2s;
       }
     }
 
