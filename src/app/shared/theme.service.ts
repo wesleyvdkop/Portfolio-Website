@@ -11,18 +11,12 @@ export class ThemeService {
   public currentTheme: Themes = 'light';
   private localStorageKey: string = 'theme.WK';
 
-  private renderer: Renderer2;
+  private renderer!: Renderer2;
   constructor(
     private rendererFactory: RendererFactory2,
     @Inject(DOCUMENT) private document: Document
   ) {
-    this.renderer = rendererFactory.createRenderer(null, null);
-
-    const storedTheme = localStorage.getItem(this.localStorageKey);
-    if ( !isNil(storedTheme) ) {
-      this.currentTheme = storedTheme as Themes;
-      this.setClass(storedTheme as Themes)
-    }
+    this.initializeTheme();
   }
 
   public switchTheme(theme: Themes) {
@@ -36,6 +30,20 @@ export class ThemeService {
       this.renderer.addClass(document.body, 'theme-dark');
     } else {
       this.renderer.removeClass(document.body, 'theme-dark');
+    }
+  }
+
+  private initializeTheme() {
+    this.renderer = this.rendererFactory.createRenderer(null, null);
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    const storedTheme = localStorage.getItem(this.localStorageKey);
+    if ( !isNil(storedTheme) ) {
+      this.currentTheme = storedTheme as Themes;
+      this.setClass(storedTheme as Themes)
+    } else if (prefersDarkMode) {
+      this.currentTheme = 'dark';
+      this.setClass('dark')
     }
   }
 }
