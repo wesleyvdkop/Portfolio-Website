@@ -2,7 +2,7 @@
   "HEADER": {
     "NAME": "Wesley van der Kop",
     "LABEL": "Hello, my name is",
-    "DESCRIPTION": "I’m an enthusiastic software engineer & designer currently making beautiful products at Everbridge, while I also have my own business. You can find my what i'm up to at <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> or if you're interested in more of my work get in contact with me."
+    "DESCRIPTION": "I'm an enthusiastic DevOps engineer, currently I'm making beautiful products at Essent. You can find my what I'm up to at <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> or if you're interested in more of my work get in contact with me."
   },
   "ABOUT": {
     "TITLE": "Developing while",
@@ -11,27 +11,28 @@
     "EATING": "Eating",
     "SLEEPING": "Sleeping",
     "INFO--FIRST": "I enjoy what I do and you can often find me late searching for new things and challenges. When I'm not sitting in front of my laptop, then I'd like to work out like fitness or other activities, or do other fun activities with my friends.",
-    "INFO--SECOND": "I currently work at Everbridge as a senior software engineer. Beside my engineering jobs I also create new designs for products within Everbridge. Because of my interest in trying new things, I also started my own business Digital Stamp. If you are interested in what I'm doing, you can also view <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> or go to <a class='link link--black' href='https://github.com/wesleyvdkop' target='_blank'>Github</a> or <a class='link link--black' href='https://dribbble.com/wesleyvdkop' target='_blank'>Dribbble</a>. You can also always ask questions via <a class='link link--black' href='mailto:mail@wesleyvanderkop.nl'>mail@wesleyvanderkop.nl</a>.",
+    "INFO--SECOND": "I currently work at Essent as a DevOps engineer. Because of my interest in trying new things, I also had my own business Digital Stamp for a time. If you are interested in what I'm doing, you can also view <a class='link link--black' href='https://www.linkedin.com/in/wesley-van-der-kop' target='_blank'>LinkedIn</a> or go to <a class='link link--black' href='https://github.com/wesleyvdkop' target='_blank'>Github</a> or <a class='link link--black' href='https://dribbble.com/wesleyvdkop' target='_blank'>Dribbble</a>. You can also always ask questions via <a class='link link--black' href='mailto:mail@wesleyvanderkop.nl'>mail@wesleyvanderkop.nl</a>.",
     "INFO--THIRD": "It's my dream to be able to travel far and see more of the world and to be able to do my work in other places in the world. I'm always open to new challenges and I'm always open to a chat when it comes to topics that are intriguing."
   },
   "SKILL_SET": {
     "TITLE": "Front-end Development & Design",
     "LABEL": "My skillset",
-    "INFO--FIRST": "I'm specialize in building web applications, creating SaaS products, working in teams with scrum and SAFe agile methods and designing digital products. I love creating new digital products.",
+    "INFO--FIRST": "I'm specialize in building web applications, creating SaaS & on-prem products, working in teams with scrum and SAFe agile methods and designing digital products. I love creating new digital products.",
     "INFO--SECOND": "But what kind of skills? Of course the general knowledge with html and css (scss), javascript and various frameworks / libraries where my specialty lies in Angular. Knowledge of the back-end is of course also there, but my specialty lies in the front-end, but I am always open to something new. Making connections to the back-end via APIs is also part of the job! When it comes to designing, my skills are with the tools Sketch, Photoshop and Illustrator.",
-    "INFO--THIRD": "During my work at Everbridge, Respond & MediaMonks I learned a lot about working in different teams and also managing them. I also always like to hear how customers work with their products and see if there are any problems with them so that they can be solved immediately."
+    "INFO--THIRD": "During my work at Essent, Everbridge, Respond & MediaMonks I learned a lot about working in different teams and also managing them. I also always like to hear how customers work with their products and see if there are any problems with them so that they can be solved immediately."
   },
   "WORK": {
     "TITLE": "Work",
     "CAREER": "Career",
     "PROJECTS": "Projects",
+    "GO_TO_WORK_SITE": "Go to the website of {{ job }}",
     "RESPOND": {
       "TITLE": "Front-end Developer & Designer",
       "TIME": "Begin 2017 - Late 2018"
     },
     "EVERBRIDGE": {
       "TITLE": "Senior Software Engineer",
-      "TIME": "Late 2018 - Now"
+      "TIME": "Late 2018 - Mid 2023"
     },
     "DIGITAL_STAMP": {
       "TITLE": "Owner",
@@ -40,12 +41,16 @@
     "MEDIAMONKS": {
       "TITLE": "Intern Front-end Developer",
       "TIME": "Mid 2016 - Late 2016"
+    },
+    "ESSENT": {
+      "TITLE": "DevOps Engineer",
+      "TIME": "Mid 2023 - Now"
     }
   },
   "CONTACT": {
     "TITLE": "Let's get in contact!",
     "TITLE_LABEL": "What now",
-    "DESCRIPTION": "If you’d like to talk about the future, just drop me a message at <a class='link link--white' href='mailto:mail@wesleyvanderkop.nl'>mail@wesleyvanderkop.nl</a>. I'm always up for a new challenge.",
+    "DESCRIPTION": "If you'd like to talk about the future, just drop me a message at <a class='link link--white' href='mailto:mail@wesleyvanderkop.nl'>mail@wesleyvanderkop.nl</a>. I'm always up for a new challenge.",
     "BUTTON": "Write an email"
   },
   "TRANSLATION": {

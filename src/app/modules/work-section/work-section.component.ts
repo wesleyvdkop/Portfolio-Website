@@ -13,6 +13,12 @@ export class WorkSectionComponent {
    */
   public jobs = [
     {
+      name: 'Essent',
+      link: 'https://essent.nl',
+      translationKeyTitle: 'ESSENT.TITLE',
+      translationKeyTime: 'ESSENT.TIME'
+    },
+    {
       name: 'Everbridge',
       link: 'https://everbridge.com',
       translationKeyTitle: 'EVERBRIDGE.TITLE',

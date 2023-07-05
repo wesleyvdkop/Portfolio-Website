@@ -34,9 +34,14 @@
     transform: translateX(-50%);
 
     .language-selector {
+      position: fixed;
+      right: 0;
+
       display: flex;
       justify-content: flex-end;
       margin: 32px 0 0;
+
+      z-index: 10;
 
       .theme-switcher {
         position: relative;
@@ -109,6 +114,7 @@
         font-size: $header--small;
         font-weight: 500;
 
+        transition: color .15s ease-out;
         @include underline();
       }
 
@@ -121,6 +127,7 @@
         line-height: 1.4em;
         font-weight: 400;
         color: var(--text-white);
+        transition: color .15s ease-out;
       }
     }
 

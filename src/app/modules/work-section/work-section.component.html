@@ -15,6 +15,7 @@
           <a
             class="link link--line"
             href="{{ job.link }}"
+            [title]="'WORK.GO_TO_WORK_SITE' | translate : { job: job.name }"
             target="_blank">
             {{ job.name }}
           </a>
